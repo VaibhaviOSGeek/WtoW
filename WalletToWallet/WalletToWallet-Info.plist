@@ -26,6 +26,8 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>Window</string>
+	<key>NSMainNibFile~ipad</key>
+	<string>Window-iPad</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

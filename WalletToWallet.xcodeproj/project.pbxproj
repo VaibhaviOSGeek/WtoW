@@ -120,6 +120,8 @@
 		68BDF47418D2230B00A7E030 /* UserReg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDF44318D2230B00A7E030 /* UserReg.png */; };
 		68E9DB6218C78A1D00572D5F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68E9DB6018C78A1D00572D5F /* ForgotPasswordViewController.xib */; };
 		68E9DB6518C78C8500572D5F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9DB6418C78C8500572D5F /* Utility.m */; };
+		EC1CFDA318E6011600EA2632 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1CFDA218E6011600EA2632 /* LoginViewController.xib */; };
+		EC1CFDA518E603FB00EA2632 /* Window-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -288,6 +290,8 @@
 		68E9DB6018C78A1D00572D5F /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		68E9DB6318C78C8500572D5F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		68E9DB6418C78C8500572D5F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		EC1CFDA218E6011600EA2632 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Window-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +476,7 @@
 		68AEB93E18C36BE700DA056F /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				EC1CFD9F18E600A700EA2632 /* iPad */,
 				68AEB94018C36C9100DA056F /* iPhone */,
 			);
 			path = Nib;
@@ -639,6 +644,7 @@
 		68AFF72618C36ADE0037E409 /* WalletToWallet */ = {
 			isa = PBXGroup;
 			children = (
+				EC1CFD9C18E5FFEA00EA2632 /* iPad */,
 				68AFF72F18C36ADE0037E409 /* AppDelegate.h */,
 				68AFF73018C36ADE0037E409 /* AppDelegate.m */,
 				68AEB93918C36B3700DA056F /* Model */,
@@ -732,6 +738,22 @@
 			path = UserRegistration;
 			sourceTree = "<group>";
 		};
+		EC1CFD9C18E5FFEA00EA2632 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		EC1CFD9F18E600A700EA2632 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */,
+				EC1CFDA218E6011600EA2632 /* LoginViewController.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -791,6 +813,7 @@
 				68BDF44C18D2230B00A7E030 /* Concierge2.png in Resources */,
 				68BDF44818D2230B00A7E030 /* BuyAirTime1.png in Resources */,
 				68BDF45F18D2230B00A7E030 /* BG.png in Resources */,
+				EC1CFDA318E6011600EA2632 /* LoginViewController.xib in Resources */,
 				682455D318C6400700106EB7 /* RewardCurrencyReportViewController.xib in Resources */,
 				68BDF47218D2230B00A7E030 /* UserImage1.png in Resources */,
 				68BDF45E18D2230B00A7E030 /* WalletWalletTransfer.png in Resources */,
@@ -841,6 +864,7 @@
 				68BDF45C18D2230B00A7E030 /* WalletTrasfer2.png in Resources */,
 				68BDF46918D2230B00A7E030 /* User_43_37.png in Resources */,
 				68BDF47418D2230B00A7E030 /* UserReg.png in Resources */,
+				EC1CFDA518E603FB00EA2632 /* Window-iPad.xib in Resources */,
 				68BDF44D18D2230B00A7E030 /* Concierge250x41.png in Resources */,
 				68BDF46818D2230B00A7E030 /* submit_122_30.png in Resources */,
 				68BDF45718D2230B00A7E030 /* SpecialOffer.png in Resources */,
@@ -976,13 +1000,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -993,13 +1018,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
