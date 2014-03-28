@@ -7,20 +7,68 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
-
+#import "AccountManager.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    if ([AccountManager Instance].activeAccount == nil) {
+        [self showLogin:NO];
+    }
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
+
++(AppDelegate*)appDelegate
+{
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+- (BOOL)isReachable {
+    Reachability *reach =[Reachability reachabilityWithHostname:@"www.google.com"];
+    return [reach isReachable];
+}
+
+- (void)showLogin:(BOOL)animated {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString * username;
+    if ([userDefaults objectForKey:@"UserName"]) {
+        username = [userDefaults objectForKey:@"UserName"];
+    }
+    LoginViewController *login = [LoginViewController initViewControllerUsername:username];
+    login.delegate = self;
+    UINavigationController *navControl = [[UINavigationController alloc] initWithRootViewController:login];
+    navControl.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self.navigation presentViewController:navControl animated:animated completion:nil];
+}
+
+- (void) logout
+{
+    [AccountManager Instance].activeAccount = nil;
+    [self showLogin:TRUE];
+    
+    
+}
+
+-(void)UserDidLogin:(LoginViewController *)login
+{
+    [self.navigation dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)reachabilityChanged:(NSNotification*)note
+{
+    Reachability * reach = [note object];
+    
+    if([reach isReachable])
+    {
+        NSLog(@"INTERNET CONNECTION AVAILABLE");
+    }
+    else
+    {
+        NSLog(@"INTERNET CONNECTION IS NOT AVAILABLE");
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

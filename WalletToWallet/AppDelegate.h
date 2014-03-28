@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginViewController.h"
+#import "Reachability.h"
+#import "LoginDelegate.h"
 
-@class ViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UINavigationControllerDelegate,LoginDelegate>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@property (strong, nonatomic) IBOutlet UIWindow *window;
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UINavigationController * navigation;
 
-@property (strong, nonatomic) ViewController *viewController;
-
++ (AppDelegate*)appDelegate;
+- (BOOL)isReachable;
+- (void) logout;
 @end
