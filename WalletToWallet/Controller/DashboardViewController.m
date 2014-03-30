@@ -13,7 +13,21 @@
 @end
 
 @implementation DashboardViewController
-
++(DashboardViewController *)initViewController
+{
+    DashboardViewController * dash;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        dash =[[DashboardViewController alloc]initWithNibName:@"DashboardViewController_iPad" bundle:[NSBundle mainBundle]];
+        
+    }else{
+        dash =[[DashboardViewController alloc]initWithNibName:@"DashboardViewController" bundle:[NSBundle mainBundle]];
+    }
+    
+    return dash;
+    
+    
+}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
@@ -30,10 +44,10 @@
     //mayaaccount.png
     [[ActivityIndicator currentIndicator]displayActivity:@"Please wait..."];
     [[MyBalanceList instance]getMyBalanceDelegate:self];
-  
+    
 }
 -(void)myAccountButtonClicked{
-                                  
+    
 }
 -(void)rechargedWalletClicked:(id)sender{
     RechageWalletViewController * recharge =[RechageWalletViewController iniViewController];
