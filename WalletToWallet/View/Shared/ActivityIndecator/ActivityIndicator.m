@@ -22,14 +22,15 @@ static ActivityIndicator *currentIndicator = nil;
 {
 	if (currentIndicator == nil)
 	{
-		UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-		
+		//UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+		CGRect keyWindow = [[UIScreen mainScreen] bounds];
 		CGFloat width = 160;
 		CGFloat height = 120;
-		CGRect centeredFrame = CGRectMake(round(keyWindow.bounds.size.width/2 - width/2),
-										  round(keyWindow.bounds.size.height/2 - height/2),
+		CGRect centeredFrame = CGRectMake(round(keyWindow.size.width/2 - width/2),
+										  round(keyWindow.size.height/2 - height/2),
 										  width,
 										  height);
+        
 		
 		currentIndicator = [[ActivityIndicator alloc] initWithFrame:centeredFrame];
 		
@@ -66,7 +67,7 @@ static ActivityIndicator *currentIndicator = nil;
 	[NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(hide) object:nil];
 	
 	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.3];
+	[UIView setAnimationDuration:0.2];
 	
 	self.alpha = 1;
 	
@@ -81,7 +82,7 @@ static ActivityIndicator *currentIndicator = nil;
 - (void)hide
 {
 	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.4];
+	[UIView setAnimationDuration:0.2];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(hidden)];
 	
@@ -121,11 +122,11 @@ static ActivityIndicator *currentIndicator = nil;
 
 - (void)displayActivity:(NSString *)m
 {
-      if(![[AppDelegate appDelegate] isReachable]){
+    if(![[AppDelegate appDelegate] isReachable]){
         return;
     }
 	[self setSubMessage:m];
-	[self showSpinner];	
+	[self showSpinner];
 	
 	[centerMessageLabel removeFromSuperview];
 	centerMessageLabel = nil;
@@ -134,6 +135,7 @@ static ActivityIndicator *currentIndicator = nil;
 		[self show];
 	else
 		[self persist];
+
 }
 
 - (void)displayCompleted:(NSString *)m
@@ -199,7 +201,7 @@ static ActivityIndicator *currentIndicator = nil;
 			centerMessageLabel.opaque = NO;
 			centerMessageLabel.textColor = [UIColor whiteColor];
 			centerMessageLabel.font = [UIFont boldSystemFontOfSize:40];
-			centerMessageLabel.textAlignment = NSTextAlignmentCenter;
+			centerMessageLabel.textAlignment = UITextAlignmentCenter;
 			centerMessageLabel.shadowColor = [UIColor darkGrayColor];
 			centerMessageLabel.shadowOffset = CGSizeMake(1,1);
 			centerMessageLabel.adjustsFontSizeToFitWidth = YES;
@@ -225,7 +227,7 @@ static ActivityIndicator *currentIndicator = nil;
 			subMessageLabel.opaque = NO;
 			subMessageLabel.textColor = [UIColor whiteColor];
 			subMessageLabel.font = [UIFont boldSystemFontOfSize:17];
-			subMessageLabel.textAlignment = NSTextAlignmentCenter;
+			subMessageLabel.textAlignment = UITextAlignmentCenter;
 			subMessageLabel.shadowColor = [UIColor darkGrayColor];
 			subMessageLabel.shadowOffset = CGSizeMake(1,1);
 			subMessageLabel.adjustsFontSizeToFitWidth = YES;
@@ -269,7 +271,7 @@ static ActivityIndicator *currentIndicator = nil;
 	if (animated)
 	{
 		[UIView beginAnimations:nil context:NULL];
-		[UIView setAnimationDuration:0.3];
+		[UIView setAnimationDuration:0.2];
 	}
 	
 	if (orientation == UIDeviceOrientationPortraitUpsideDown)
