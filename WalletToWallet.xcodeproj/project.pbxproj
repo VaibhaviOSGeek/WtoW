@@ -47,6 +47,10 @@
 		687FE35F18CB6683005CFA93 /* RadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE35C18CB6683005CFA93 /* RadioButtonGroup.m */; };
 		687FE36018CB6683005CFA93 /* ToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE35E18CB6683005CFA93 /* ToggleButton.m */; };
 		687FE36A18CB7937005CFA93 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE36918CB7937005CFA93 /* ForgotPasswordViewController.m */; };
+		68A4798718E86B3A0025F34C /* WalletReportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A4798618E86B3A0025F34C /* WalletReportCell.xib */; };
+		68A4798A18E86E4B0025F34C /* WalletReportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4798918E86E4B0025F34C /* WalletReportCell.m */; };
+		68A4798D18E8915C0025F34C /* RewardCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4798C18E8915C0025F34C /* RewardCurrencyCell.m */; };
+		68A4798F18E8916F0025F34C /* RewardCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A4798E18E8916F0025F34C /* RewardCurrencyCell.xib */; };
 		68AEB94218C36CB200DA056F /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68AEB94118C36CB200DA056F /* Window.xib */; };
 		68AEB94718C36D1E00DA056F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68AEB94518C36D1E00DA056F /* DashboardViewController.xib */; };
 		68AEB94A18C36D5300DA056F /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AEB94918C36D5300DA056F /* DashboardViewController.m */; };
@@ -122,7 +126,6 @@
 		68BDF47418D2230B00A7E030 /* UserReg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDF44318D2230B00A7E030 /* UserReg.png */; };
 		68E9DB6218C78A1D00572D5F /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68E9DB6018C78A1D00572D5F /* ForgotPasswordViewController.xib */; };
 		68E9DB6518C78C8500572D5F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9DB6418C78C8500572D5F /* Utility.m */; };
-		EC1CFDA318E6011600EA2632 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1CFDA218E6011600EA2632 /* LoginViewController.xib */; };
 		EC1CFDA518E603FB00EA2632 /* Window-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */; };
 /* End PBXBuildFile section */
 
@@ -191,6 +194,12 @@
 		687FE36818CB7937005CFA93 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		687FE36918CB7937005CFA93 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		687FE36B18CB7DCC005CFA93 /* UniversalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversalDelegate.h; sourceTree = "<group>"; };
+		68A4798618E86B3A0025F34C /* WalletReportCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletReportCell.xib; sourceTree = "<group>"; };
+		68A4798818E86E4B0025F34C /* WalletReportCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletReportCell.h; sourceTree = "<group>"; };
+		68A4798918E86E4B0025F34C /* WalletReportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletReportCell.m; sourceTree = "<group>"; };
+		68A4798B18E8915C0025F34C /* RewardCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardCurrencyCell.h; sourceTree = "<group>"; };
+		68A4798C18E8915C0025F34C /* RewardCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardCurrencyCell.m; sourceTree = "<group>"; };
+		68A4798E18E8916F0025F34C /* RewardCurrencyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardCurrencyCell.xib; sourceTree = "<group>"; };
 		68AEB94118C36CB200DA056F /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 		68AEB94518C36D1E00DA056F /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		68AEB94818C36D5300DA056F /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
@@ -295,7 +304,6 @@
 		68E9DB6018C78A1D00572D5F /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
 		68E9DB6318C78C8500572D5F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		68E9DB6418C78C8500572D5F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
-		EC1CFDA218E6011600EA2632 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Window-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -342,6 +350,10 @@
 			children = (
 				682455DF18C642F600106EB7 /* ReportTableCell.h */,
 				682455E018C642F600106EB7 /* ReportTableCell.m */,
+				68A4798818E86E4B0025F34C /* WalletReportCell.h */,
+				68A4798918E86E4B0025F34C /* WalletReportCell.m */,
+				68A4798B18E8915C0025F34C /* RewardCurrencyCell.h */,
+				68A4798C18E8915C0025F34C /* RewardCurrencyCell.m */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -350,6 +362,8 @@
 			isa = PBXGroup;
 			children = (
 				682455E518C6435200106EB7 /* ReportTableCell.xib */,
+				68A4798618E86B3A0025F34C /* WalletReportCell.xib */,
+				68A4798E18E8916F0025F34C /* RewardCurrencyCell.xib */,
 			);
 			path = "Custom\U0010Cell";
 			sourceTree = "<group>";
@@ -754,7 +768,6 @@
 			isa = PBXGroup;
 			children = (
 				EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */,
-				EC1CFDA218E6011600EA2632 /* LoginViewController.xib */,
 				6842E5A518E72CDB004C0CF0 /* DashboardViewController_iPad.h */,
 				6842E5A618E72CDB004C0CF0 /* DashboardViewController_iPad.m */,
 				6842E5A718E72CDB004C0CF0 /* DashboardViewController_iPad.xib */,
@@ -821,11 +834,12 @@
 				68BDF44C18D2230B00A7E030 /* Concierge2.png in Resources */,
 				68BDF44818D2230B00A7E030 /* BuyAirTime1.png in Resources */,
 				68BDF45F18D2230B00A7E030 /* BG.png in Resources */,
-				EC1CFDA318E6011600EA2632 /* LoginViewController.xib in Resources */,
 				682455D318C6400700106EB7 /* RewardCurrencyReportViewController.xib in Resources */,
+				68A4798F18E8916F0025F34C /* RewardCurrencyCell.xib in Resources */,
 				68BDF47218D2230B00A7E030 /* UserImage1.png in Resources */,
 				68BDF45E18D2230B00A7E030 /* WalletWalletTransfer.png in Resources */,
 				68BDF47318D2230B00A7E030 /* UserImage2.png in Resources */,
+				68A4798718E86B3A0025F34C /* WalletReportCell.xib in Resources */,
 				68BDF46B18D2230B00A7E030 /* logo.png in Resources */,
 				682455C218C635FD00106EB7 /* SpecialOfferViewController.xib in Resources */,
 				6860D46718C4F56500E8A0D3 /* RegistrationViewController.xib in Resources */,
@@ -911,6 +925,7 @@
 				68AEB96C18C375D700DA056F /* SBJsonParser.m in Sources */,
 				68E9DB6518C78C8500572D5F /* Utility.m in Sources */,
 				687FE36A18CB7937005CFA93 /* ForgotPasswordViewController.m in Sources */,
+				68A4798D18E8915C0025F34C /* RewardCurrencyCell.m in Sources */,
 				687FB3B718D8B6480081E9FF /* ReportList.m in Sources */,
 				68AEB97018C375F800DA056F /* NSMutableArray+Join.m in Sources */,
 				687FE35F18CB6683005CFA93 /* RadioButtonGroup.m in Sources */,
@@ -936,6 +951,7 @@
 				682455B318C6358C00106EB7 /* ListConciergeServicesViewController.m in Sources */,
 				68AFF73118C36ADE0037E409 /* AppDelegate.m in Sources */,
 				682455DD18C640CB00106EB7 /* WalletReportViewController.m in Sources */,
+				68A4798A18E86E4B0025F34C /* WalletReportCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,7 +1026,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
@@ -1028,7 +1044,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
