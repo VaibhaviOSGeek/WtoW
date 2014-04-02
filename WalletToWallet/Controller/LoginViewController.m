@@ -17,7 +17,15 @@
 @synthesize Passtxt=_Passtxt;
 
 +(LoginViewController *)initViewControllerUsername:(NSString *)username{
-    LoginViewController * login =[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    LoginViewController * login;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        login =[[LoginViewController alloc]initWithNibName:@"LoginViewController_iPad" bundle:[NSBundle mainBundle]];
+        
+    }else{
+       login =[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:[NSBundle mainBundle]];
+    }
+    
     login.username = username;
     return login;
 }

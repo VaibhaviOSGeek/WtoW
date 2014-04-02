@@ -22,6 +22,7 @@
 {
     IBOutlet UILabel * _lblMyBalance;
 }
++(DashboardViewController*)initViewController;
 
 @property (nonatomic ,retain) UILabel * lblMyBalance;
 - (IBAction)rechargedWalletClicked:(id)sender;
