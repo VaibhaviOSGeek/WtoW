@@ -1,14 +1,14 @@
 //
-//  ReportTableCell.h
+//  WalletReportCell.h
 //  WalletToWallet
 //
-//  Created by harish on 04/03/2014.
+//  Created by harish on 30/03/2014.
 //  Copyright (c) 2014 Narendra. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "RewordReportInfo.h"
-@interface ReportTableCell : UITableViewCell
+@interface WalletReportCell : UITableViewCell
 {
     IBOutlet UILabel * _lblDate;
     IBOutlet UILabel * _lblDec;
@@ -17,7 +17,7 @@
     IBOutlet UILabel * _lblPoint;
     IBOutlet UIView * _containerView;
     IBOutlet UIView * _view;
-   
+    
 }
 @property (nonatomic ,retain) UILabel * lblDate;
 @property (nonatomic ,retain) UILabel * lblDec;

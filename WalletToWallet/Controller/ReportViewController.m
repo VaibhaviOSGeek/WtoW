@@ -35,6 +35,8 @@
 
 }
 -(void)RewardsCurrencyReportClicked:(id)sender{
+    RewardCurrencyReportViewController * reward =[RewardCurrencyReportViewController initViewController];
+    [self.navigationController pushViewController:reward animated:YES];
 
 }
 - (void)didReceiveMemoryWarning

@@ -12,4 +12,6 @@
 
 + (BOOL)validateEmailWithString:(NSString*)email;
 
++ (NSString *)getCurrencyFormatFromFloat:(float)floatValue;
+
 @end

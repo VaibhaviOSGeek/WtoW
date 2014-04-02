@@ -61,7 +61,7 @@
 #pragma mark -ModelListDelegate
 -(void)ModelListLoadedSuccessfully{
     [[ActivityIndicator currentIndicator]displayCompleted];
-    _lblMyBalance.text = [MyBalanceList instance].user_balance;
+    _lblMyBalance.text = [Utility getCurrencyFormatFromFloat:[[MyBalanceList instance].user_balance floatValue]];
 }
 -(void)ModelListLoadFailWithError:(NSString *)error{
     [[ActivityIndicator currentIndicator]displayCompleted];

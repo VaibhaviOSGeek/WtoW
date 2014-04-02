@@ -22,7 +22,6 @@
     return recharge;
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,6 +29,18 @@
         [[ActivityIndicator currentIndicator]displayActivity:@"Please wait..."];
     }
     [[ReportList instance]getRewardReportListByPage:1 Delegate:self];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    RewordReportInfo * rewardInfo =[_reportArray objectAtIndex:indexPath.row];
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize title_size = [rewardInfo.description sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+    
+    CGSize c_size=CGSizeMake(320, title_size.height+2 + 31 + 30);
+    return c_size.height;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -40,8 +51,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
+
     static NSString *CellIdentifier = @"Cell";
     
     ReportTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -59,6 +69,23 @@
         }
         RewordReportInfo * rewardInfo =[_reportArray objectAtIndex:indexPath.row];
         [cell setData:rewardInfo];
+        
+        
+        CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+        
+    
+        CGSize Descriptionsize = [rewardInfo.description sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+    
+        [cell.lblDec setFrame:CGRectMake(CELL_CONTENT_MARGIN,cell.lblDec.frame.origin.y, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2),Descriptionsize.height)];
+        
+        [cell.containerView setFrame:CGRectMake(5,cell.lblDec.frame.size.height + 36,cell.containerView.frame.size.width,cell.containerView.frame.size.height)];
+        
+        
+        [cell.view setFrame:CGRectMake(5,1,cell.frame.size.width-10,cell.lblDec.frame.size.height +31+30)];
+        
+        [cell setFrame:CGRectMake(0,0,320,cell.view.frame.size.height)];
+        [cell setFrame:CGRectMake(0,0,320,cell.frame.size.height)];
+
         
     }
     

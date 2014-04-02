@@ -26,10 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if ([[ReportList instance]getRewardReportList].count <= 0) {
+    if ([[ReportList instance]getRewardCurrencyList].count <= 0) {
         [[ActivityIndicator currentIndicator]displayActivity:@"Please wait..."];
     }
-    [[ReportList instance]getRewardReportListByPage:1 Delegate:self];
+    [[ReportList instance]getRewardCurrencyListByPage:1 Delegate:self];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -39,39 +39,68 @@
     
     
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    RewordReportInfo * rewardInfo =[_rewardCurrencyArray objectAtIndex:indexPath.row];
+    
+    CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+    
+    CGSize title_size = [rewardInfo.description sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+    
+    CGSize c_size=CGSizeMake(320, title_size.height+2 + 31 + 30);
+    return c_size.height;
+    
+}
+
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
     static NSString *CellIdentifier = @"Cell";
     
-    ReportTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    RewardCurrencyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil)
     {
-        NSArray *topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"ReportTableCell" owner:self options:nil];
+        NSArray *topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"RewardCurrencyCell" owner:self options:nil];
         
         for(id currentObject in topLevelObject)
         {
             if([currentObject isKindOfClass:[UITableViewCell class]])
             {
-                cell = (ReportTableCell*) currentObject;
+                cell = (RewardCurrencyCell*) currentObject;
             }
         }
         RewordReportInfo * rewardInfo =[_rewardCurrencyArray objectAtIndex:indexPath.row];
         [cell setData:rewardInfo];
         
+        
+        CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
+        
+        
+        CGSize Descriptionsize = [rewardInfo.description sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+        
+        [cell.lblDec setFrame:CGRectMake(CELL_CONTENT_MARGIN,cell.lblDec.frame.origin.y, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2),Descriptionsize.height)];
+        
+        [cell.containerView setFrame:CGRectMake(5,cell.lblDec.frame.size.height + 36,cell.containerView.frame.size.width,cell.containerView.frame.size.height)];
+        
+        
+        [cell.view setFrame:CGRectMake(5,1,cell.frame.size.width-10,cell.lblDec.frame.size.height +31+30)];
+        
+        [cell setFrame:CGRectMake(0,0,320,cell.view.frame.size.height)];
+        [cell setFrame:CGRectMake(0,0,320,cell.frame.size.height)];
+        
+        
     }
     
     return  cell;
-    
 }
 
 #pragma mark -ModelListDelegate
 -(void)ModelListLoadedSuccessfully{
     [[ActivityIndicator currentIndicator]displayCompleted];
     _rewardCurrencyArray = [[NSMutableArray alloc]init];
-    _rewardCurrencyArray =  [[ReportList instance]getRewardReportList];
+    _rewardCurrencyArray =  [[ReportList instance]getRewardCurrencyList];
     [_tblRewardCurrency reloadData];
     
 }

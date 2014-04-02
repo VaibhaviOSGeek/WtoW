@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ReportTableCell.h"
+#import "RewardCurrencyCell.h"
 #import "RewordReportInfo.h"
 #import "ActivityIndicator.h"
 #import "ReportList.h"
+#import "ModelListDelegate.h"
 
-@interface RewardCurrencyReportViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface RewardCurrencyReportViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,ModelListDelegate>
 {
     IBOutlet UITableView * _tblRewardCurrency;
     NSMutableArray * _rewardCurrencyArray;

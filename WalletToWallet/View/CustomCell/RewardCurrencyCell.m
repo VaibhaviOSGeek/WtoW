@@ -1,19 +1,18 @@
 //
-//  ReportTableCell.m
+//  RewardCurrencyCell.m
 //  WalletToWallet
 //
-//  Created by harish on 04/03/2014.
+//  Created by harish on 30/03/2014.
 //  Copyright (c) 2014 Narendra. All rights reserved.
 //
 
-#import "ReportTableCell.h"
+#import "RewardCurrencyCell.h"
 
-@implementation ReportTableCell
+@implementation RewardCurrencyCell
 @synthesize lblamount=_lblamount;
 @synthesize lblDate=_lblDate;
 @synthesize lblDec=_lblDec;
 @synthesize lblPoint=_lblPoint;
-@synthesize lblTrasectionId=_lblTrasectionId;
 @synthesize containerView=_containerView;
 @synthesize view=_view;
 
@@ -26,13 +25,17 @@
     return self;
 }
 -(void)setData:(RewordReportInfo *)reward{
-
+    /*
+     date: "22-Feb-2014"
+     description: "Redeem Points"
+     points: null
+     amount: "&#8358;0.00"
+     */
     _lblamount.text = reward.amount;
     _lblDate.text = reward.dateStringFormat;
     _lblDec.text = reward.description;
     _lblPoint.text = reward.points;
-    _lblTrasectionId.text = reward.transaction_id;
-
+   
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

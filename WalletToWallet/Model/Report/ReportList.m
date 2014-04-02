@@ -49,7 +49,7 @@ static ReportList * Singleton =nil;
 }
 -(void)getRewardCurrencyListByPage:(int)page Delegate:(id<ModelListDelegate>)delegate{
     _modelListDelegate=delegate;
-    if (_reportArray.count <= 0) {
+    if (_rewardCurrencyArray.count <= 0) {
         WalletToWalletRequest * request =[[WalletToWalletRequest alloc]initWithApiMethod:MY_REWARD_CURRENCUY andDelegate:self andMethod:POST];
         WalletToWalletAccount * account =[AccountManager Instance].activeAccount;
         [request setParameter:[NSNumber numberWithInt:17] forKey:@"uid"];
@@ -82,7 +82,7 @@ static ReportList * Singleton =nil;
         
         NSDictionary * mainDict=[request.responseData objectForKey:@"parameters"];
         
-        NSArray* array = [mainDict objectForKey:@"rewards"];
+        NSArray* array = [mainDict objectForKey:@"reward_currency"];
         
         if (array && array.count >0) {
             for (NSDictionary * rewardDict in array) {

@@ -17,5 +17,5 @@
 #define MY_TRANSECTION @"mytransactions"
 #define MY_REWARDS @"myrewards"
 #define WALLET_RECHARGE_CHARGES @"wallet_recharge_charges"
-#define MY_REWARD_CURRENCUY @"myreward_currencuy"
+#define MY_REWARD_CURRENCUY @"myreward_currency"
 #endif

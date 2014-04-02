@@ -17,4 +17,11 @@
     return [emailTest evaluateWithObject:email];
 }
 
++(NSString *)getCurrencyFormatFromFloat:(float)floatValue{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
+    NSString *numberAsString = [numberFormatter stringFromNumber:[NSNumber numberWithFloat:floatValue]];
+    return numberAsString;
+}
+
 @end

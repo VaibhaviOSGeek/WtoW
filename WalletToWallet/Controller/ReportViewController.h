@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WalletReportViewController.h"
 #import "RewardViewController.h"
+#import "RewardCurrencyReportViewController.h"
 @interface ReportViewController : UIViewController
 
 

@@ -27,13 +27,17 @@
     if ([dict objectForKey:@"transaction_id"]) {
         reward.transaction_id = [dict objectForKey:@"transaction_id"];
     }
-    if ([dict objectForKey:@"points"]) {
+    if ([dict objectForKey:@"points"] == [NSNull null]) {
+        reward.points = @"";
+    }else{
         reward.points = [dict objectForKey:@"points"];
     }
     if ([dict objectForKey:@"amount"]) {
         reward.amount = [dict objectForKey:@"amount"];
     }
     return reward;
+    
+
 
 }
 @end
