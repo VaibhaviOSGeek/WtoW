@@ -32,8 +32,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    methodArray = [[NSMutableArray alloc]initWithObjects:@"Method1",@"Method2",@"Method3",@"Method4", nil];
-    currencyArray = [[NSMutableArray alloc]initWithObjects:@"currency1",@"currency2",@"currency3",@"currency4", nil];
+    
+    
+    _txtAccountName.text =@"Jack Martin";
+    _txtAccount.text =@"WE-17-3692";
+    methodArray = [[NSMutableArray alloc]initWithObjects:@"Pay Using Card", nil];
+    currencyArray = [[NSMutableArray alloc]initWithObjects:@"NGN", nil];
     
     // Do any additional setup after loading the view from its nib.
 }
@@ -77,7 +81,7 @@
     if (_txtActualAmount.text.length > 0) {
          [[ActivityIndicator currentIndicator]displayActivity:@"Please wait..."];
         
-        [[RechageList instance]rechargeWalletByAmount:[_txtActualAmount.text floatValue] ModelDelegate:self];
+        [[RechageList instance]wallet_recharge_confirmAccount_no:_txtAccount.text AccountName:_txtAccountName.text Currency:_txtCurrency.text ActualAmount:_txtActualAmount.text Payment_method:_txtMethod.text TotalAmount:_txtActualAmount.text ModelDelegate:self];
         
     }else{
         UIAlertView * alertView =[[UIAlertView alloc]initWithTitle:ALERT_TITLE message:@"Please enter Recharge amount.!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
@@ -147,11 +151,15 @@
 -(void)ModelListLoadedSuccessfully{
     [[ActivityIndicator currentIndicator]displayCompleted];
     [self clearAllData];
-    UIAlertView * alertView =[[UIAlertView alloc]initWithTitle:ALERT_TITLE message:@"Recharge Successfully." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [alertView show];
-   // currencyArray = [[RechageList instance]getRechangeList];
     
     
+    
+    PreviewViewController * preview = [PreviewViewController initViewControllerUrl:[RechageList instance].redirectUrl];
+   
+    UINavigationController * nav =[[UINavigationController alloc]initWithRootViewController:preview];
+    [self presentViewController:nav animated:YES completion:nil];
+    
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 -(void)ModelListLoadFailWithError:(NSString *)error{
      [[ActivityIndicator currentIndicator]displayCompleted];

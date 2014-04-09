@@ -25,6 +25,9 @@
 		682455E118C642F600106EB7 /* ReportTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 682455E018C642F600106EB7 /* ReportTableCell.m */; };
 		682455E618C6435200106EB7 /* ReportTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682455E518C6435200106EB7 /* ReportTableCell.xib */; };
 		6852640A18D56CFB000B3EB0 /* ConcierceImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6852640918D56CFB000B3EB0 /* ConcierceImage.png */; };
+		6854D64018F318FD0013326F /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6854D63E18F318FD0013326F /* PreviewViewController.xib */; };
+		6854D64318F319450013326F /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6854D64218F319450013326F /* PreviewViewController.m */; };
+		6856E9E918F4F2D7008A63C8 /* WalletToWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6856E9E818F4F2D7008A63C8 /* WalletToWalletViewController.xib */; };
 		6860D45B18C4E8D200E8A0D3 /* WalletTextfield.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860D45A18C4E8D200E8A0D3 /* WalletTextfield.m */; };
 		6860D46118C4EB6D00E8A0D3 /* KeyboardAccessoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860D45E18C4EB6D00E8A0D3 /* KeyboardAccessoryHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6860D46218C4EB6D00E8A0D3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6860D46018C4EB6D00E8A0D3 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -44,6 +47,11 @@
 		687FE35F18CB6683005CFA93 /* RadioButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE35C18CB6683005CFA93 /* RadioButtonGroup.m */; };
 		687FE36018CB6683005CFA93 /* ToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE35E18CB6683005CFA93 /* ToggleButton.m */; };
 		687FE36A18CB7937005CFA93 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 687FE36918CB7937005CFA93 /* ForgotPasswordViewController.m */; };
+		688C632E18F1A7B7008D2180 /* WalletInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C632D18F1A7B7008D2180 /* WalletInfo.m */; };
+		688C633118F1ACF3008D2180 /* WalletTrasferChargeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 688C633018F1ACF3008D2180 /* WalletTrasferChargeInfo.m */; };
+		68A7F1EB18EDD19B00DE8D44 /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7F1E918EDD19B00DE8D44 /* MyAccountViewController.m */; };
+		68A7F1EF18EDD1D500DE8D44 /* MyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68A7F1EE18EDD1D500DE8D44 /* MyAccountViewController.xib */; };
+		68A7F1F218EDD8AA00DE8D44 /* MyAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A7F1F118EDD8AA00DE8D44 /* MyAccount.m */; };
 		68AEB94218C36CB200DA056F /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68AEB94118C36CB200DA056F /* Window.xib */; };
 		68AEB94718C36D1E00DA056F /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68AEB94518C36D1E00DA056F /* DashboardViewController.xib */; };
 		68AEB94A18C36D5300DA056F /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AEB94918C36D5300DA056F /* DashboardViewController.m */; };
@@ -160,6 +168,10 @@
 		682455E018C642F600106EB7 /* ReportTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportTableCell.m; sourceTree = "<group>"; };
 		682455E518C6435200106EB7 /* ReportTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportTableCell.xib; sourceTree = "<group>"; };
 		6852640918D56CFB000B3EB0 /* ConcierceImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConcierceImage.png; sourceTree = "<group>"; };
+		6854D63E18F318FD0013326F /* PreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		6854D64118F319450013326F /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		6854D64218F319450013326F /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		6856E9E818F4F2D7008A63C8 /* WalletToWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletToWalletViewController.xib; sourceTree = "<group>"; };
 		6860D45918C4E8D200E8A0D3 /* WalletTextfield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTextfield.h; sourceTree = "<group>"; };
 		6860D45A18C4E8D200E8A0D3 /* WalletTextfield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTextfield.m; sourceTree = "<group>"; };
 		6860D45D18C4EB6D00E8A0D3 /* KeyboardAccessoryHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAccessoryHelper.h; sourceTree = "<group>"; };
@@ -193,6 +205,15 @@
 		687FE36818CB7937005CFA93 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
 		687FE36918CB7937005CFA93 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
 		687FE36B18CB7DCC005CFA93 /* UniversalDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversalDelegate.h; sourceTree = "<group>"; };
+		688C632C18F1A7B7008D2180 /* WalletInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletInfo.h; sourceTree = "<group>"; };
+		688C632D18F1A7B7008D2180 /* WalletInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletInfo.m; sourceTree = "<group>"; };
+		688C632F18F1ACF3008D2180 /* WalletTrasferChargeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTrasferChargeInfo.h; sourceTree = "<group>"; };
+		688C633018F1ACF3008D2180 /* WalletTrasferChargeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTrasferChargeInfo.m; sourceTree = "<group>"; };
+		68A7F1E818EDD19B00DE8D44 /* MyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		68A7F1E918EDD19B00DE8D44 /* MyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
+		68A7F1EE18EDD1D500DE8D44 /* MyAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyAccountViewController.xib; sourceTree = "<group>"; };
+		68A7F1F018EDD8AA00DE8D44 /* MyAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccount.h; sourceTree = "<group>"; };
+		68A7F1F118EDD8AA00DE8D44 /* MyAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccount.m; sourceTree = "<group>"; };
 		68AEB94118C36CB200DA056F /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 		68AEB94518C36D1E00DA056F /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		68AEB94818C36D5300DA056F /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
@@ -400,6 +421,10 @@
 				687FB3AC18D8ABC70081E9FF /* RechageInfo.m */,
 				687FB3AE18D8ABD50081E9FF /* RechageList.h */,
 				687FB3AF18D8ABD50081E9FF /* RechageList.m */,
+				688C632C18F1A7B7008D2180 /* WalletInfo.h */,
+				688C632D18F1A7B7008D2180 /* WalletInfo.m */,
+				688C632F18F1ACF3008D2180 /* WalletTrasferChargeInfo.h */,
+				688C633018F1ACF3008D2180 /* WalletTrasferChargeInfo.m */,
 			);
 			path = Recharge;
 			sourceTree = "<group>";
@@ -438,6 +463,23 @@
 			path = toggle;
 			sourceTree = "<group>";
 		};
+		68A7F1E718EDD18200DE8D44 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				68A7F1E818EDD19B00DE8D44 /* MyAccountViewController.h */,
+				68A7F1E918EDD19B00DE8D44 /* MyAccountViewController.m */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		68A7F1ED18EDD1D500DE8D44 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				68A7F1EE18EDD1D500DE8D44 /* MyAccountViewController.xib */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
 		68AEB93918C36B3700DA056F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,6 +507,9 @@
 		68AEB93B18C36B5600DA056F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6854D64118F319450013326F /* PreviewViewController.h */,
+				6854D64218F319450013326F /* PreviewViewController.m */,
+				68A7F1E718EDD18200DE8D44 /* MyAccount */,
 				687FE36818CB7937005CFA93 /* ForgotPasswordViewController.h */,
 				687FE36918CB7937005CFA93 /* ForgotPasswordViewController.m */,
 				682455D418C640CB00106EB7 /* Report */,
@@ -520,6 +565,8 @@
 		68AEB94018C36C9100DA056F /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				6856E9E818F4F2D7008A63C8 /* WalletToWalletViewController.xib */,
+				68A7F1ED18EDD1D500DE8D44 /* MyAccount */,
 				682455E218C6431700106EB7 /* CustomCell */,
 				682455C418C63FBF00106EB7 /* Report */,
 				682455BA18C635FC00106EB7 /* ListConciergeServicesViewController.xib */,
@@ -530,6 +577,7 @@
 				68AEB94118C36CB200DA056F /* Window.xib */,
 				68AEB94518C36D1E00DA056F /* DashboardViewController.xib */,
 				6860D46518C4F56500E8A0D3 /* RegistrationViewController.xib */,
+				6854D63E18F318FD0013326F /* PreviewViewController.xib */,
 			);
 			path = iPhone;
 			sourceTree = "<group>";
@@ -588,6 +636,8 @@
 				68AEB97518C3771F00DA056F /* WalletToWalletAccount.m */,
 				687FE34C18CB6271005CFA93 /* RegistrationInfo.h */,
 				687FE34D18CB6271005CFA93 /* RegistrationInfo.m */,
+				68A7F1F018EDD8AA00DE8D44 /* MyAccount.h */,
+				68A7F1F118EDD8AA00DE8D44 /* MyAccount.m */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -844,6 +894,7 @@
 				682455D318C6400700106EB7 /* RewardCurrencyReportViewController.xib in Resources */,
 				68BDF47218D2230B00A7E030 /* UserImage1.png in Resources */,
 				ECF0A5D418EDC44A0097CB0D /* WalletReportCell.xib in Resources */,
+				6854D64018F318FD0013326F /* PreviewViewController.xib in Resources */,
 				68BDF45E18D2230B00A7E030 /* WalletWalletTransfer.png in Resources */,
 				68BDF47318D2230B00A7E030 /* UserImage2.png in Resources */,
 				68BDF46B18D2230B00A7E030 /* logo.png in Resources */,
@@ -871,6 +922,7 @@
 				EC2C71E118E8935400CFB4A5 /* LoginViewController_iPad.xib in Resources */,
 				68BDF46C18D2230B00A7E030 /* logo1.png in Resources */,
 				68BDF47018D2230B00A7E030 /* submit1.png in Resources */,
+				68A7F1EF18EDD1D500DE8D44 /* MyAccountViewController.xib in Resources */,
 				68BDF45D18D2230B00A7E030 /* WalletTrasfer250x41.png in Resources */,
 				EC2C71DD18E86D0900CFB4A5 /* RechageWalletViewController_iPad.xib in Resources */,
 				68BDF46718D2230B00A7E030 /* submit1.png in Resources */,
@@ -895,6 +947,7 @@
 				68BDF45C18D2230B00A7E030 /* WalletTrasfer2.png in Resources */,
 				68BDF46918D2230B00A7E030 /* User_43_37.png in Resources */,
 				EC2C71D918E862ED00CFB4A5 /* DashboardViewController_iPad.xib in Resources */,
+				6856E9E918F4F2D7008A63C8 /* WalletToWalletViewController.xib in Resources */,
 				68BDF47418D2230B00A7E030 /* UserReg.png in Resources */,
 				EC1CFDA518E603FB00EA2632 /* Window-iPad.xib in Resources */,
 				68BDF44D18D2230B00A7E030 /* Concierge250x41.png in Resources */,
@@ -941,13 +994,18 @@
 				687FE35F18CB6683005CFA93 /* RadioButtonGroup.m in Sources */,
 				68AEB99F18C38B2500DA056F /* ActivityIndicator.m in Sources */,
 				687FB3AD18D8ABC70081E9FF /* RechageInfo.m in Sources */,
+				68A7F1EB18EDD19B00DE8D44 /* MyAccountViewController.m in Sources */,
 				68AFF72D18C36ADE0037E409 /* main.m in Sources */,
 				68AEB9A318C38B8600DA056F /* Reachability.m in Sources */,
 				68AEB94A18C36D5300DA056F /* DashboardViewController.m in Sources */,
 				68AEB96818C375D700DA056F /* NSObject+SBJSON.m in Sources */,
+				688C633118F1ACF3008D2180 /* WalletTrasferChargeInfo.m in Sources */,
 				687FB3B418D8B6360081E9FF /* RewordReportInfo.m in Sources */,
 				687FE34E18CB6271005CFA93 /* RegistrationInfo.m in Sources */,
 				682455DB18C640CB00106EB7 /* RewardCurrencyReportViewController.m in Sources */,
+				6854D64318F319450013326F /* PreviewViewController.m in Sources */,
+				688C632E18F1A7B7008D2180 /* WalletInfo.m in Sources */,
+				68A7F1F218EDD8AA00DE8D44 /* MyAccount.m in Sources */,
 				68AEB96918C375D700DA056F /* NSString+SBJSON.m in Sources */,
 				682455AE18C6356500106EB7 /* ReportViewController.m in Sources */,
 				6860D46218C4EB6D00E8A0D3 /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -1001,7 +1059,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -1022,7 +1080,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -1036,7 +1094,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
@@ -1054,7 +1112,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WalletToWallet/WalletToWallet-Prefix.pch";
 				INFOPLIST_FILE = "WalletToWallet/WalletToWallet-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",

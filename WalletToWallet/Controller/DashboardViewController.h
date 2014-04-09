@@ -16,6 +16,8 @@
 #import "MyBalanceList.h"
 #import "ModelListDelegate.h"
 #import "Utility.h"
+#import "MyAccountViewController.h"
+#import "MyAccount.h"
 
 
 @interface DashboardViewController : UIViewController<ModelListDelegate>

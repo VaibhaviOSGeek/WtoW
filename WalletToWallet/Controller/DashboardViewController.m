@@ -31,6 +31,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
+
+    [[MyAccount Instance]getMyAccountDetailWithDelegate:nil];
     
 }
 - (void)viewDidLoad
@@ -47,7 +49,8 @@
     
 }
 -(void)myAccountButtonClicked{
-    
+    MyAccountViewController * myAcocunt =[MyAccountViewController initViewController];
+    [self.navigationController pushViewController:myAcocunt animated:YES];
 }
 -(void)rechargedWalletClicked:(id)sender{
     RechageWalletViewController * recharge =[RechageWalletViewController iniViewController];

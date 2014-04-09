@@ -12,6 +12,7 @@
 #import "ModelListDelegate.h"
 #import "ActivityIndicator.h"
 #import "RechageList.h"
+#import "PreviewViewController.h"
 @interface RechageWalletViewController : UIViewController<UIActionSheetDelegate,UIPickerViewDataSource,UIPickerViewDelegate,ModelListDelegate>
 {
     IBOutlet UITextField * _txtAccount;

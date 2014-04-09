@@ -23,6 +23,7 @@
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
     self.layer.borderWidth = 1.0;
     self.layer.cornerRadius = 2.0;
+    self.backgroundColor = [UIColor whiteColor];
     
 }
 

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WalletToWalletAccount.h"
+#import "ModelListDelegate.h"
 
 @interface AccountManager : NSObject
 {
@@ -21,6 +22,8 @@
 +(AccountManager*)Instance;
 
 -(void)saveAccount;
+
+- (void)getMyAccountDetailWithDelegate:(id<ModelListDelegate>)delegate;
 
 
 

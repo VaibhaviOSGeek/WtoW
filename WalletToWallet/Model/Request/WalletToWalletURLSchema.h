@@ -18,4 +18,11 @@
 #define MY_REWARDS @"myrewards"
 #define WALLET_RECHARGE_CHARGES @"wallet_recharge_charges"
 #define MY_REWARD_CURRENCUY @"myreward_currency"
+
+//4042014
+#define WALLET_TRANSFER_FUND_CHARGES @"wallet_transfer_fund_charges"
+#define GET_WALLET_ACCOUNT_NAME @"get_wallet_account_name"
+#define MY_ACCOUNT @"myaccount"
+#define WALLET_RECHARGE_CONFIRM @"wallet_recharge_confirm"
+#define TRANSFER_FUND_CONFIRM @"transfer_fund_confirm"
 #endif
