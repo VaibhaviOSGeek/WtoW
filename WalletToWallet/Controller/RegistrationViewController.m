@@ -24,7 +24,15 @@
 @synthesize txtDateOfBirth=_txtDateOfBirth;
 
 +(RegistrationViewController *)initViewController{
-    RegistrationViewController * registrationViewController =[[RegistrationViewController alloc]initWithNibName:@"RegistrationViewController" bundle:[NSBundle mainBundle]];
+    RegistrationViewController * registrationViewController;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+     registrationViewController =[[RegistrationViewController alloc]initWithNibName:@"RegistrationViewController_iPad" bundle:[NSBundle mainBundle]];}
+    else
+    {
+         registrationViewController =[[RegistrationViewController alloc]initWithNibName:@"RegistrationViewController" bundle:[NSBundle mainBundle]];
+    }
+  
     registrationViewController.title =@"Registration";
     return registrationViewController;
 }

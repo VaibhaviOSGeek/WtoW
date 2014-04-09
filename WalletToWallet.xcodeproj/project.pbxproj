@@ -118,6 +118,11 @@
 		68BDF47318D2230B00A7E030 /* UserImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDF44218D2230B00A7E030 /* UserImage2.png */; };
 		68BDF47418D2230B00A7E030 /* UserReg.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BDF44318D2230B00A7E030 /* UserReg.png */; };
 		68E9DB6518C78C8500572D5F /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9DB6418C78C8500572D5F /* Utility.m */; };
+		EC19ECF418F1C31A0046DEB5 /* WalletToWalletViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19ECF318F1C31A0046DEB5 /* WalletToWalletViewController.xib */; };
+		EC19ECF618F1C6BD0046DEB5 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19ECF518F1C6BD0046DEB5 /* ForgotPasswordViewController.xib */; };
+		EC19ECF918F1CCBB0046DEB5 /* RewardCurrencyCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19ECF818F1CCBB0046DEB5 /* RewardCurrencyCell_iPad.xib */; };
+		EC19ECFB18F1CD220046DEB5 /* WalletReportCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19ECFA18F1CD220046DEB5 /* WalletReportCell_iPad.xib */; };
+		EC19ECFD18F1CD620046DEB5 /* ReportTableCell_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC19ECFC18F1CD620046DEB5 /* ReportTableCell_iPad.xib */; };
 		EC1CFDA518E603FB00EA2632 /* Window-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */; };
 		EC2C71D518E860AC00CFB4A5 /* RegistrationViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2C71D418E860AC00CFB4A5 /* RegistrationViewController_iPad.xib */; };
 		EC2C71D718E8621F00CFB4A5 /* ForgotPasswordViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2C71D618E8621F00CFB4A5 /* ForgotPasswordViewController_iPad.xib */; };
@@ -296,6 +301,11 @@
 		68BDF44318D2230B00A7E030 /* UserReg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserReg.png; sourceTree = "<group>"; };
 		68E9DB6318C78C8500572D5F /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 		68E9DB6418C78C8500572D5F /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		EC19ECF318F1C31A0046DEB5 /* WalletToWalletViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletToWalletViewController.xib; sourceTree = "<group>"; };
+		EC19ECF518F1C6BD0046DEB5 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		EC19ECF818F1CCBB0046DEB5 /* RewardCurrencyCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardCurrencyCell_iPad.xib; sourceTree = "<group>"; };
+		EC19ECFA18F1CD220046DEB5 /* WalletReportCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletReportCell_iPad.xib; sourceTree = "<group>"; };
+		EC19ECFC18F1CD620046DEB5 /* ReportTableCell_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReportTableCell_iPad.xib; sourceTree = "<group>"; };
 		EC1CFDA418E603FB00EA2632 /* Window-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Window-iPad.xib"; sourceTree = "<group>"; };
 		EC2C71D418E860AC00CFB4A5 /* RegistrationViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController_iPad.xib; sourceTree = "<group>"; };
 		EC2C71D618E8621F00CFB4A5 /* ForgotPasswordViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForgotPasswordViewController_iPad.xib; sourceTree = "<group>"; };
@@ -500,6 +510,7 @@
 		68AEB93E18C36BE700DA056F /* Nib */ = {
 			isa = PBXGroup;
 			children = (
+				EC19ECF718F1CC7F0046DEB5 /* CustomCell_iPad */,
 				EC1CFD9F18E600A700EA2632 /* iPad */,
 				68AEB94018C36C9100DA056F /* iPhone */,
 			);
@@ -520,6 +531,8 @@
 		68AEB94018C36C9100DA056F /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				EC19ECF518F1C6BD0046DEB5 /* ForgotPasswordViewController.xib */,
+				EC19ECF318F1C31A0046DEB5 /* WalletToWalletViewController.xib */,
 				682455E218C6431700106EB7 /* CustomCell */,
 				682455C418C63FBF00106EB7 /* Report */,
 				682455BA18C635FC00106EB7 /* ListConciergeServicesViewController.xib */,
@@ -760,6 +773,17 @@
 			path = UserRegistration;
 			sourceTree = "<group>";
 		};
+		EC19ECF718F1CC7F0046DEB5 /* CustomCell_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				EC19ECF818F1CCBB0046DEB5 /* RewardCurrencyCell_iPad.xib */,
+				EC19ECFA18F1CD220046DEB5 /* WalletReportCell_iPad.xib */,
+				EC19ECFC18F1CD620046DEB5 /* ReportTableCell_iPad.xib */,
+			);
+			name = CustomCell_iPad;
+			path = iPad/CustomCell_iPad;
+			sourceTree = "<group>";
+		};
 		EC1CFD9C18E5FFEA00EA2632 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
@@ -855,7 +879,9 @@
 				68BDF44E18D2230B00A7E030 /* Concireage1.png in Resources */,
 				687FE35918CB6624005CFA93 /* demo.png in Resources */,
 				682455E618C6435200106EB7 /* ReportTableCell.xib in Resources */,
+				EC19ECF418F1C31A0046DEB5 /* WalletToWalletViewController.xib in Resources */,
 				68AEB94218C36CB200DA056F /* Window.xib in Resources */,
+				EC19ECF618F1C6BD0046DEB5 /* ForgotPasswordViewController.xib in Resources */,
 				68BDF45418D2230B00A7E030 /* process-a copy.png in Resources */,
 				6852640A18D56CFB000B3EB0 /* ConcierceImage.png in Resources */,
 				68BDF45118D2230B00A7E030 /* logo1.png in Resources */,
@@ -865,9 +891,11 @@
 				68AFF73318C36ADE0037E409 /* Default.png in Resources */,
 				68BDF47118D2230B00A7E030 /* UserImage.png in Resources */,
 				68BDF44B18D2230B00A7E030 /* Concierge.png in Resources */,
+				EC19ECFD18F1CD620046DEB5 /* ReportTableCell_iPad.xib in Resources */,
 				68BDF44918D2230B00A7E030 /* BuyAirTime2.png in Resources */,
 				68AFF73518C36ADE0037E409 /* Default@2x.png in Resources */,
 				687FE35518CB6624005CFA93 /* CheckboxChecked.png in Resources */,
+				EC19ECF918F1CCBB0046DEB5 /* RewardCurrencyCell_iPad.xib in Resources */,
 				EC2C71E118E8935400CFB4A5 /* LoginViewController_iPad.xib in Resources */,
 				68BDF46C18D2230B00A7E030 /* logo1.png in Resources */,
 				68BDF47018D2230B00A7E030 /* submit1.png in Resources */,
@@ -904,6 +932,7 @@
 				68BDF45718D2230B00A7E030 /* SpecialOffer.png in Resources */,
 				682455C018C635FD00106EB7 /* RechageWalletViewController.xib in Resources */,
 				682455CE18C63FEA00106EB7 /* RewardViewController.xib in Resources */,
+				EC19ECFB18F1CD220046DEB5 /* WalletReportCell_iPad.xib in Resources */,
 				68BDF46D18D2230B00A7E030 /* logoImg.png in Resources */,
 				68BDF46318D2230B00A7E030 /* logo_144_144.png in Resources */,
 				68BDF45818D2230B00A7E030 /* SpecialOffer1.png in Resources */,

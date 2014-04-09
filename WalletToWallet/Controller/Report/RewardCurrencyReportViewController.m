@@ -61,8 +61,16 @@
     RewardCurrencyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil)
-    {
-        NSArray *topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"RewardCurrencyCell" owner:self options:nil];
+    {NSArray *topLevelObject;
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+             topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"RewardCurrencyCell_iPad" owner:self options:nil];
+        }
+        else
+        {
+             topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"RewardCurrencyCell" owner:self options:nil];
+        }
+       
         
         for(id currentObject in topLevelObject)
         {

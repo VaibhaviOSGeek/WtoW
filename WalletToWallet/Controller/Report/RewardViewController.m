@@ -51,14 +51,24 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     static NSString *CellIdentifier = @"Cell";
     
     ReportTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    NSArray *topLevelObject;
     if (cell == nil)
     {
-        NSArray *topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"ReportTableCell" owner:self options:nil];
+        if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+        {
+            topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"ReportTableCell_iPad" owner:self options:nil];
+        }
+        else
+        {
+            topLevelObject = [[NSBundle mainBundle] loadNibNamed:@"ReportTableCell" owner:self options:nil];
+        }
+        
+        
+        
         
         for(id currentObject in topLevelObject)
         {
@@ -73,9 +83,9 @@
         
         CGSize constraint = CGSizeMake(CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2), 20000.0f);
         
-    
+        
         CGSize Descriptionsize = [rewardInfo.description sizeWithFont:[UIFont systemFontOfSize:FONT_SIZE] constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
-    
+        
         [cell.lblDec setFrame:CGRectMake(CELL_CONTENT_MARGIN,cell.lblDec.frame.origin.y, CELL_CONTENT_WIDTH - (CELL_CONTENT_MARGIN * 2),Descriptionsize.height)];
         
         [cell.containerView setFrame:CGRectMake(5,cell.lblDec.frame.size.height + 36,cell.containerView.frame.size.width,cell.containerView.frame.size.height)];
@@ -85,7 +95,7 @@
         
         [cell setFrame:CGRectMake(0,0,320,cell.view.frame.size.height)];
         [cell setFrame:CGRectMake(0,0,320,cell.frame.size.height)];
-
+        
         
     }
     
@@ -97,9 +107,9 @@
 -(void)ModelListLoadedSuccessfully{
     [[ActivityIndicator currentIndicator]displayCompleted];
     _reportArray = [[NSMutableArray alloc]init];
-      _reportArray =  [[ReportList instance]getRewardReportList];
+    _reportArray =  [[ReportList instance]getRewardReportList];
     [_tblReport reloadData];
-
+    
 }
 
 -(void)ModelListLoadFailWithError:(NSString *)error{

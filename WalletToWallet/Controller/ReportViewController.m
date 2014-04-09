@@ -15,7 +15,15 @@
 @implementation ReportViewController
 
 +(ReportViewController *)initViewController{
-    ReportViewController * recharge =[[ReportViewController alloc]initWithNibName:@"ReportViewController" bundle:[NSBundle mainBundle]];
+    ReportViewController * recharge;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    { recharge =[[ReportViewController alloc]initWithNibName:@"ReportViewController_iPad" bundle:[NSBundle mainBundle]];
+    }
+    else
+    {
+         recharge =[[ReportViewController alloc]initWithNibName:@"ReportViewController" bundle:[NSBundle mainBundle]];
+    }
+   
     recharge.title =@"Report";
     return recharge;
 }
