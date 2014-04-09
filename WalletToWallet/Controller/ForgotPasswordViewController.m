@@ -16,7 +16,16 @@
 @synthesize txtEmail=_txtEmail;
 
 +(ForgotPasswordViewController *)initViewController{
-    ForgotPasswordViewController * forgot =[[ForgotPasswordViewController alloc]initWithNibName:@"ForgotPasswordViewController" bundle:[NSBundle mainBundle]];
+    ForgotPasswordViewController * forgot;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+         forgot =[[ForgotPasswordViewController alloc]initWithNibName:@"ForgotPasswordViewController_iPad" bundle:[NSBundle mainBundle]];
+    }
+    else
+    {
+        forgot =[[ForgotPasswordViewController alloc]initWithNibName:@"ForgotPasswordViewController" bundle:[NSBundle mainBundle]];
+    }
+    
     forgot.title =@"Forgot";
     return forgot;
 }

@@ -20,7 +20,16 @@
 @synthesize txtMethod=_txtMethod;
 
 +(RechageWalletViewController *)iniViewController{
-    RechageWalletViewController * recharge =[[RechageWalletViewController alloc]initWithNibName:@"RechageWalletViewController" bundle:[NSBundle mainBundle]];
+    RechageWalletViewController * recharge;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+         recharge =[[RechageWalletViewController alloc]initWithNibName:@"RechageWalletViewController_iPad" bundle:[NSBundle mainBundle]];
+    }
+    else
+    {
+         recharge =[[RechageWalletViewController alloc]initWithNibName:@"RechageWalletViewController" bundle:[NSBundle mainBundle]];
+    }
+  
     recharge.title =@"Rechage Wallet";
     return recharge;
 }

@@ -23,8 +23,19 @@
 @synthesize scrollView=_scrollView;
 
 +(WalletToWalletViewController *)initViewController{
-    WalletToWalletViewController * recharge =[[WalletToWalletViewController alloc]initWithNibName:@"WalletToWalletViewController" bundle:[NSBundle mainBundle]];
-    recharge.title =@"Wallet To Wallet";
+   //WalletToWalletViewController_iPad
+    WalletToWalletViewController * recharge;
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+    {
+        recharge =[[WalletToWalletViewController alloc]initWithNibName:@"WalletToWalletViewController_iPad" bundle:[NSBundle mainBundle]];
+
+    }
+    else
+    {
+        recharge =[[WalletToWalletViewController alloc]initWithNibName:@"WalletToWalletViewController" bundle:[NSBundle mainBundle]];
+
+    }
+        recharge.title =@"Wallet To Wallet";
     return recharge;
 }
 

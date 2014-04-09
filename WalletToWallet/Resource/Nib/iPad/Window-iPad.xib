@@ -38,12 +38,12 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
             <navigationBar key="navigationBar" contentMode="scaleToFill" id="fn6-Ke-BhE">
                 <autoresizingMask key="autoresizingMask"/>
             </navigationBar>
             <viewControllers>
-                <viewController nibName="DashboardViewController" wantsFullScreenLayout="YES" id="7id-I5-3d8" customClass="DashboardViewController">
+                <viewController nibName="DashboardViewController_iPad" wantsFullScreenLayout="YES" id="7id-I5-3d8" customClass="DashboardViewController">
                     <navigationItem key="navigationItem" title="DashBoard" id="ndJ-fP-SHG"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
