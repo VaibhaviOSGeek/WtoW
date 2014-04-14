@@ -19,7 +19,16 @@
 @synthesize txtAccountNo=_txtAccountNo;
 
 +(MyAccountViewController *)initViewController{
-    MyAccountViewController * myAccount =[[MyAccountViewController alloc]initWithNibName:@"MyAccountViewController" bundle:[NSBundle mainBundle]];
+    MyAccountViewController * myAccount;
+     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad )
+     {
+          myAccount =[[MyAccountViewController alloc]initWithNibName:@"MyAccountViewController_iPad" bundle:[NSBundle mainBundle]];
+     }
+    else
+    {
+         myAccount =[[MyAccountViewController alloc]initWithNibName:@"MyAccountViewController" bundle:[NSBundle mainBundle]];
+    }
+   
     myAccount.title=@"My Account";
     return myAccount;
 }

@@ -25,6 +25,22 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+            filePath = "WalletToWallet/Controller/LoginViewController.m"
+            timestampString = "416852761.919077"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "-accountAuthenticatedWithAccount:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
             filePath = "WalletToWallet/Controller/Report/RewardViewController.m"
             timestampString = "416939231.105334"
             startingColumnNumber = "9223372036854775807"
@@ -48,6 +64,22 @@
             startingLineNumber = "78"
             endingLineNumber = "78"
             landmarkName = "-ModelListLoadFailWithError:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalletToWallet/Model/Report/ReportList.m"
+            timestampString = "416941515.051224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-getRewardReportListByPage:Delegate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WalletToWallet/Controller/PreviewViewController.m"
-            timestampString = "418669243.905428"
+            filePath = "WalletToWallet/Model/Balance/MyBalanceList.m"
+            timestampString = "417026621.293349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-getMyBalanceDelegate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -31,7 +31,9 @@
      points: null
      amount: "&#8358;0.00"
      */
-    _lblamount.text = reward.amount;
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier: @"en_US"];
+     NSString *dollar = [locale displayNameForKey:NSLocaleCurrencySymbol value:@"USD"];
+    _lblamount.text =[NSString stringWithFormat:@"%@ %@",dollar,reward.amount];
     _lblDate.text = reward.dateStringFormat;
     _lblDec.text = reward.description;
     _lblPoint.text = reward.points;
